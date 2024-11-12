@@ -1,14 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int init_amount;
-        int amount;
-        int tot_amount;
-        int bonus = 0;
+        int init_amount; //начальная сумма счета
+        int amount;      //сумма пополнения
+        int tot_amount;  //сумма счета
+        int bonus = 0;   //бонусы
+/*ввод данных*/
+        init_amount = 100;
+        amount = 1100;
 
-        init_amount = 100; //начальная сумма счета
-        amount = 1100; //ввод суммы пополнения
-
-        if (amount > 1000) {
+        if (amount > 1000) {             //проверка бонусных условий
             bonus = amount / 100;
             System.out.println("Поздравляем! Ваш бонус = " + bonus + " руб.");
         }
